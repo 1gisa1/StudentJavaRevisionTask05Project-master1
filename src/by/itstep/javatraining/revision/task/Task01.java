@@ -52,38 +52,6 @@ public class Task01 {
         return count;
     }
 
-    public static void main(String[] args) {
-
-        int a = 7;
-        int b = 7;
-        int c = 3;
-        int d = 7;
-
-        ArrayList arraylist = new ArrayList();
-        arraylist.add(a);
-        arraylist.add(b);
-        arraylist.add(c);
-        arraylist.add(d);
-
-        Collections.sort(arraylist);
-        System.out.println(arraylist);
-
-        int count = 1;
-        for (int i = 0; i < arraylist.size() - 1 ; i++) {
-            if (arraylist.get(i) == arraylist.get(i+1)){
-                count++;
-            }
-        }
-
-        if (count == 1){
-            count = 0;
-        }
-
-        System.out.println(count);
-
-
-    }
-
 }
 
 
