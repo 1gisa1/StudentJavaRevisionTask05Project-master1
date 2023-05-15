@@ -45,7 +45,7 @@ public class Task02 {
                 answer = "Monotonic arithmetic progression.";
             }
         } else {
-            return answer = "No arithmetic progression.";
+             answer = "No arithmetic progression.";
         }
 
         return answer;

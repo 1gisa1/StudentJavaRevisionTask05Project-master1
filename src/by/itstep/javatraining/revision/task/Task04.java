@@ -38,7 +38,41 @@ package by.itstep.javatraining.revision.task;
  */
 
 public class Task04 {
+
+    public static int vesok = 0;
+
     public static int task04(int month, int year) {
-        return 0;
+
+        if (month <= 0 || month > 12) {
+            return 0;
+        }
+
+        switch (month) {
+            case 1, 3, 5, 7, 8, 10, 12:
+                vesok = 31;
+                break;
+            case 4, 6, 9, 11:
+                vesok = 30;
+                break;
+
+            case 2:
+                if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {
+                    vesok = 29;
+                } else {
+                    vesok = 28;
+                }
+                break;
+
+
+        }
+
+
+        return vesok;
     }
+
+
 }
+
+
+
+
