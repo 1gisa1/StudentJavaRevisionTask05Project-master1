@@ -48,6 +48,8 @@ public class Task04 {
         }
 
         switch (month) {
+
+
             case 1, 3, 5, 7, 8, 10, 12:
                 vesok = 31;
                 break;

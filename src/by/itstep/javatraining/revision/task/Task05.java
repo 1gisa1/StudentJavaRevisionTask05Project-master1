@@ -26,8 +26,33 @@ package by.itstep.javatraining.revision.task;
  *	[output 4]: 0
  */
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class Task05 {
     public static int task05(int a, int b, int c) {
-        return 0;
+
+        List<Integer> arraylist = Arrays.asList(a, b, c);
+        Collections.sort(arraylist);
+        if (a == b || b == c || c == a) {
+            return 0;
+        }
+
+        return arraylist.get(1);
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

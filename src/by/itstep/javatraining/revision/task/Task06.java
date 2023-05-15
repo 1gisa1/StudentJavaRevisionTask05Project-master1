@@ -40,6 +40,32 @@ package by.itstep.javatraining.revision.task;
 
 public class Task06 {
     public static String task06(int number) {
-        return "?";
+        String color = "error";
+
+        switch (number) {
+            case 0:
+                color = "green";
+                break;
+
+            case 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28:
+                if (number % 2 != 0) {
+                    color = " red";
+                } else {
+                    color = "black";
+                }
+                break;
+            case 11, 12, 13, 14, 15, 16, 17, 18, 29, 30, 31, 32, 33, 34, 35, 36:
+                if (number % 2 != 0) {
+                    color = " black";
+                } else {
+                    color = "red";
+                }
+                break;
+
+
+        }
+
+
+        return color;
     }
 }
